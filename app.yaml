@@ -1,0 +1,33 @@
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /(.*\.(htm|html|css|js))
+  static_files: application/\1
+  upload: application/.*\.(htm|html|css|js)$
+  application_readable: true
+
+- url: /application/(.*\.(ico|jpg|jpeg|png|gif|woff|woff2|ttf|otf|eot|svg))
+  static_files: application/\1
+  upload: application/.*\.(ico|jpg|jpeg|png|gif|woff|woff2|ttf|otf|eot|svg)$
+  application_readable: true
+
+- url: /(.*\.(ico|jpg|jpeg|png|gif|woff|woff2|ttf|otf|eot|svg))
+  static_files: application/\1
+  upload: application/.*\.(ico|jpg|jpeg|png|gif|woff|woff2|ttf|otf|eot|svg)$
+  application_readable: true
+
+- url: /
+  script: index.php
+
+- url: /(.+)
+  script: index.php
+
+skip_files:
+- ^(.*/)?\.zip$
+- ^(.*/)?\.bat$
+- ^(.*/)?\.sh$
+- ^(.*/)?\.md$
+- ^vendor
+
+- ^.git
