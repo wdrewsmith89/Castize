@@ -25,6 +25,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['base_url'] = '';
 
+$config['theme_name'] = 'plate';
+
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -116,7 +118,7 @@ $config['enable_hooks'] = FALSE;
 | https://codeigniter.com/user_guide/general/creating_libraries.html
 |
 */
-$config['subclass_prefix'] = 'MY_';
+$config['subclass_prefix'] = 'PLATE_';
 
 /*
 |--------------------------------------------------------------------------
