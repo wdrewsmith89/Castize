@@ -1,0 +1,48 @@
+.form-container {
+    max-width: 100%;
+
+    .form-field-block {
+        label,
+        input,
+        select,
+        textarea {
+            display: block;
+            width: 100%;
+        }
+    }
+    .form-field-inline {
+        label,
+        input,
+        select {
+            display: inline-block;
+            width: auto;
+        }
+    }
+    .form-field-block,
+    .form-field-inline {
+        margin-bottom: 15px;
+
+        label {
+            margin-bottom: 2px;
+        }
+
+        input:not([type="submit"]),
+        input:not([type="button"]),
+        select,
+        textarea {
+            padding: 5px;
+            font-size: 18px;
+            color: #444;
+            background-color: inherit;
+            border: 1px solid $light_grey;
+            border-radius: 0;
+            -webkit-appearance: none;
+        }
+        select {
+            background-image: url(/application/views/podx/dist/images/arrow.png);
+            background-repeat: no-repeat;
+            background-position: 99%;
+            background-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.btn {
+    &.btn-primary {
+        background-color: $brand_primary;
+        border-color: $brand_primary;
+        border-radius: 0;
+        -webkit-transition: background-color 0.3s ease-in-out;
+        -moz-transition: background-color 0.3s ease-in-out;
+        -o-transition: background-color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover, &:focus {
+            background-color: $brand_secondary;
+            border-color: $brand_secondary;
+        }
+    }
+}

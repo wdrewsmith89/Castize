@@ -26,3 +26,10 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.sublime-workspace
 *.sublime-project
 /tests/tests/
+
+dist
+bower_components
+node_modules
+npm-debug.log
+yarn-error.log
+vendor

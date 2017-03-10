@@ -1,0 +1,52 @@
+.sideNav {
+    width: $sideNavWidth;
+    #{$sideNavDirection}: -$sideNavWidth;
+    position: fixed;
+    z-index: 1000;
+    height: 100%;
+    top: 0;
+    background: $brand-primary;
+    transition: all 0.3s ease;
+
+    h3 {
+        color: #fff;
+        font-size: 24px;
+        padding: 20px;
+        margin: 0;
+        font-weight: 300;
+        background: #111;
+    }
+
+    a {
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        padding: 20px;
+
+        &:hover {
+            background: #222;
+            text-decoration: none;
+        }
+
+        &:active {
+            background: #afdefa;
+            color: #47a3da;
+        }
+    }
+
+    &.sideNav-open {
+        #{$sideNavDirection}: 0px;
+    }
+}
+
+/* classes applied to the body */
+.sideNavBody {
+    overflow-x: hidden;
+    position: relative;
+    #{$sideNavDirection}: 0;
+    transition: all 0.3s ease;
+}
+
+.sideNavBody-push {
+    #{$sideNavDirection}: $sideNavWidth;
+}

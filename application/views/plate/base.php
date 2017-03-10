@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<title><?php the_title(); ?></title>
 		<?php get_head(); ?>
 	</head>
-	<body <?php the_body_class(); ?>>
+	<body <?php the_body_class('sideNavBody'); ?>>
 		<div class="wrap" role="document">
 			<?php get_header(); ?>
 			<div class="content">

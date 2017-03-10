@@ -1,0 +1,44 @@
+header#header {
+    padding: 10px 0;
+    background-color: $light_grey;
+
+    ul.nav {
+        & > li {
+            display: inline;
+            padding: 2px;
+
+            & > a {
+                border-bottom: 2px solid transparent;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: .3s ease-in-out;
+
+                &:hover, &:focus {
+                    border-color: $black;
+                }
+            }
+
+            ul.dropdown-menu {
+                li {
+                    a {
+                        display: block;
+                        padding: 5px 10px;
+                        width: 100%;
+                        border-bottom: 1px solid $lightest_grey;
+
+                        &:hover, &:focus {
+                            background-color: $lightest_grey;
+                            text-decoration: none;
+                        }
+                    }
+
+                    &:last-of-type {
+                        a {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

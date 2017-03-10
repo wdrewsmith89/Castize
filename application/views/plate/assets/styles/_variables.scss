@@ -1,0 +1,71 @@
+// Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Colors
+$brand_primary:         #285d33;
+$brand_secondary:		#b33131;
+$trans_white:			rgba(255,255,255,0.9);
+$trans_white_hover:		rgba(255,255,255,1.0);
+$nav_borders:			#eaeaea;
+$button_text: 			#fff;
+$color_subnav_border: 	#ddd;
+$background_strapline:	#f4f4f4;
+$text_input:			#666;
+$border_input:			#ccc;
+$text_input_focus:		#111;
+$form_border:			#d1d1d1;
+$black:					#000;
+$light_grey:			#ccc;
+$lightest_grey:			#ddd;
+$white:					#fff;
+
+// Typography
+$font_main: "Raleway", sans-serif;
+$font_headings: 'PT Sans', sans-serif;
+$font_logo: 'PT Serif', serif;
+$font_weight_main: 400;
+$font_weight_headings: 300;
+$font_line_height_main: 1.625;
+$font_line_height_nav: 1.4;
+
+//Side-Nav
+$sideNavWidth: 240px;
+$sideNavDirection: (right);
+$button_width: 30px;     // width of button area
+$button_height: 30px;     // height of button area
+$bar_thickness: 4px;     // thickness of button bars
+$bar_roundness: 0;
+$button_pad: 0px;      // left/right padding between button area and bars.
+$button_bar_space: 5px;     // spacing between button bars
+$button_transistion_duration: 0.3s;  // transition duration
+$hamburger_normal: $brand-primary;
+$hamburger_active: $brand-primary;
+
+// Common breakpoints
+$width_mobile: 480px;
+$width_phablet: 600px;
+$width_tablet: 768px;
+$width_laptop: 992px;
+$width_desktop: 1200px;
+$width_wide: 1400px;
+$width_hdtv: 1600px;
+
+// Media queries - @include mobile { selector: style; }
+@mixin mobile 	{ @media (min-width: #{$width_mobile})	{ @content; } }
+@mixin phablet 	{ @media (min-width: #{$width_phablet})	{ @content; } }
+@mixin tablet 	{ @media (min-width: #{$width_tablet})	{ @content; } }
+@mixin laptop 	{ @media (min-width: #{$width_laptop})	{ @content; } }
+@mixin desktop 	{ @media (min-width: #{$width_desktop})	{ @content; } }
+@mixin wide 	{ @media (min-width: #{$width_wide})	{ @content; } }
+@mixin hdtv 	{ @media (min-width: #{$width_hdtv})	{ @content; } }
+
+// Aspect ratio mixin - @include aspectRatio(16, 9);
+@mixin aspectRatio($ratio-or-width, $height: null) {
+	$padding: if($height, percentage($height/$ratio-or-width), percentage(1/$ratio-or-width));
+	&:before { content:''; float: left; padding-bottom: $padding; }
+	&:after  { content:''; display: table; clear: both; }
+}

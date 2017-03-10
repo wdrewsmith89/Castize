@@ -1,0 +1,21 @@
+{
+  "name": "castize",
+  "homepage": "http://www.castize.com",
+  "authors": [
+    "Drew Smith <wdrewsmith89@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-alpha.4",
+    "components-font-awesome": "^4.7.0"
+  },
+  "overrides": {
+    "components-font-awesome": {
+      "main": [
+        "./css/font-awesome.css",
+        "./fonts/*"
+      ]
+    }
+  }
+}

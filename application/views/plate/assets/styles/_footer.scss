@@ -1,0 +1,31 @@
+footer#footer {
+    .footer {
+        padding: 10px 0;
+        background-color: $light_grey;
+
+        ul.nav {
+            li {
+                display: inline;
+                padding: 2px;
+
+                a {
+                    border-bottom: 2px solid transparent;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: .35s ease-in-out;
+
+                    &:hover, &:focus {
+                        border-color: $black;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        padding: 5px 0;
+        background-color: $black;
+        color: $white;
+        font-size: 12px;
+    }
+}
